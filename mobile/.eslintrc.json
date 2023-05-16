@@ -1,0 +1,54 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "overrides": [
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "indent": [
+        "error",
+        2
+    ],
+    "linebreak-style": 0,
+    "quotes": [
+        "error",
+        "single"
+    ],
+    "semi": [
+        "error",
+        "always"
+    ],
+    "@typescript-eslint/no-unused-vars": "error",
+    "react/react-in-jsx-scope": "off",
+    "jsx-quotes": [2, "prefer-single"],
+    "react/button-has-type": "error",
+    "react-hooks/rules-of-hooks": "warn",
+    "react/require-default-props": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-key": "error",
+    "react/no-array-index-key": "warn",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-max-props-per-line": [1, { "maximum": 2 }]
+  },
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    }
+  }
+}
