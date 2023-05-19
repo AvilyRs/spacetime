@@ -20,7 +20,12 @@ export function Profile() {
 
       <p className='text-small leading-snug max-w-[180px]'>
         <span className='font-bold'>{name}</span>
-        <a href='#' className='block text-red-400 hover:text-red-300 transition-colors'>Sair</a>
+        <a
+          href='/api/auth/logout'
+          className='block text-red-400 hover:text-red-300 transition-colors'
+        >
+          Sair
+        </a>
       </p>
     </div>
   );
